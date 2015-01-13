@@ -3,7 +3,7 @@
 // @author      phija
 // @namespace   http://www.phiworld.de
 // @description Sets small simple links below the project drop down list for quicker access to the Mantis projects
-// @include     http://tracker.atrics.loc*
+// @include     *://trackerUrl/*
 // @grant       none
 // @version     0.1.0
 // ==/UserScript==
@@ -26,7 +26,7 @@ function setLinks() {
       var style = "margin-right:" + spacing + "px; padding:3px; border:1px solid black; background-color:" + backgroundColor + ";";
       for (var j = 0; j < links.length; j++) 
       {   
-        linkText += "<a style='" + style + "' href='http://tracker.atrics.loc/set_project.php?project_id=" + links[j][0] + "' name='Project1'>" + links[j][1] + "</a>";
+        linkText += "<a style='" + style + "' href='set_project.php?project_id=" + links[j][0] + "' name='Project1'>" + links[j][1] + "</a>";
       }
       elements[i].innerHTML += linkText + "</div>";
     }
