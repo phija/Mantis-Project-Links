@@ -5,7 +5,7 @@
 // @description Sets small simple links below the project drop down list for quicker access to the Mantis projects
 // @include     *://trackerUrl/*
 // @grant       none
-// @version     0.1.0
+// @version     0.1.1
 // ==/UserScript==
 
 var links = [
